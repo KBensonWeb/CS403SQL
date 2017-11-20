@@ -18,4 +18,16 @@
             android:layout_marginRight="6dp"
             android:layout_marginTop="6dp" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/recyclerview"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/recyclerview"
+        android:layout_marginLeft="129dp"
+        android:layout_marginStart="129dp"
+        android:text="@string/button"
+        android:onClick="addMovie"/>
+
 </RelativeLayout>

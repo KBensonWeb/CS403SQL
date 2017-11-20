@@ -1,10 +1,13 @@
 package com.androidbash.androidbashphpmysql;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -60,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void addMovie(View view) {
+        Intent intent = new Intent(this, AddMovieActivity.class);
+        startActivity(intent);
+    }
 
     private void getMoviesFromDB(int id) {
 

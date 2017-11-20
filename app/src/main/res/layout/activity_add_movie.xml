@@ -15,8 +15,12 @@
         android:text="@string/button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="406dp"
-        android:onClick="addMovie()"/>
+        android:onClick="addMovieToDB"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageA"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
 
     <EditText
         android:id="@+id/mTitleA"
@@ -27,18 +31,20 @@
         android:hint="@string/mTitle"
         android:inputType="textPersonName"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="57dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp" />
 
     <EditText
         android:id="@+id/genreA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/genre"
         android:inputType="textPersonName"
+        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="131dp" />
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/mTitleA" />
 
     <EditText
         android:id="@+id/imageA"
@@ -49,7 +55,8 @@
         android:hint="@string/image"
         android:inputType="textPersonName"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="205dp" />
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/genreA" />
 
     <TextView
         android:id="@+id/mTitleL"
