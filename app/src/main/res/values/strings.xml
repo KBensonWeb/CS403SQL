@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Upcoming Movies 2017</string>
+    <string name="button">Add Movie</string>
+    <string name="mTitle">Title</string>
+    <string name="image">Image URL</string>
+    <string name="genre">Genre</string>
+</resources>
